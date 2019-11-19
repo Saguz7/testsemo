@@ -1,0 +1,198 @@
+#btncerrar{
+  background-color: #e57373 ;
+  color: #000000;
+  font-family: fuenteparatitulos;
+  width: 300px;
+}
+#btnaceptar{
+  background-color: #00695c;
+  color: #FFFFFF;
+  font-family: fuenteparatitulos;
+
+}
+
+label{
+  font-family: fuenteregulartexto;
+
+font-size: 20px;
+}
+
+
+#nav1cambiotamanio{
+  font-size: 18px;
+}
+
+#nav1cambiotamanio2{
+  font-size: 18px;
+}
+
+#nav1cambiotamanio3{
+  font-size: 18px;
+}
+
+#nav1cambiotamanio4{
+  font-size: 18px;
+}
+
+
+#modificarexamen{
+   font-family: fuenteparatitulos;
+
+}
+
+#listaexamenescreados{
+   font-family: fuenteparatitulos;
+}
+
+.atributoscuestionario{
+  font-family: fuenteparatitulos;
+
+}
+
+label {
+  color: #000000;
+
+  }
+
+  #botoncratetest{
+    width: 300px;
+  }
+
+  #inputrdobtn{
+    margin-top: 16px;
+  }
+
+  .nav-content{
+    background-color: #e7e7e7
+  }
+
+  nav{
+    background-color: #FFFFFF
+  }
+
+  .advertencia{
+    font-size: 18px;
+    color: #e91e63;
+
+  }
+
+  nav .input-field label i {
+    color: rgba(0, 0, 0, 0.7);
+    transition: color .3s;
+}
+
+  .tabs.tabs-transparent .tab a, .tabs.tabs-transparent .tab.disabled a, .tabs.tabs-transparent .tab.disabled a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+  @media screen and (max-width: 600px) {
+
+
+    #cambiodetamanio,#cambiodetamanio1 {
+      width: 100%;
+      margin-left: 2%;
+    }
+    #cambiodetamanio2,#cambiodetamanio3 {
+      margin-left: 2%;
+      width: 100%;
+    }
+    #cambiodetamanio5,#cambiodetamanio4 {
+      width: 100%;
+      margin-left: 2%;
+    }
+
+    #cambiodetamanio21,#cambiodetamanio20 {
+      width: 100%;
+      margin-left: -4%;
+
+     }
+    #cambiodetamanio22,#cambiodetamanio23 {
+      width: 100%;
+      margin-left: -4%;
+     }
+
+    #cambiodetamanio25,#cambiodetamanio24 {
+      width: 100%;
+      margin-left: -4%;
+
+     }
+
+     #licenciadiv1{
+       margin-left: -6%;
+
+     }
+
+     #btnform1{
+       margin-left: -8%;
+
+       width: 140px;
+     }
+
+     #btnmodificarexamen{
+       margin-left: 25%;
+     }
+
+     #modificarexamen{
+       margin-left: 1%;
+       font-family: fuenteparatitulos;
+
+     }
+
+     #listaexamenescreados{
+       margin-left: 2%;
+       font-family: fuenteparatitulos;
+
+     }
+
+    label {
+      font-size: 18px;
+      color: #000000;
+
+      }
+
+      #nav1cambiotamanio{
+        font-size: 10px;
+      }
+
+      #nav1cambiotamanio2{
+        font-size: 10px;
+      }
+
+      #nav1cambiotamanio3{
+        font-size: 10px;
+      }
+
+      #nav1cambiotamanio4{
+        font-size: 10px;
+      }
+
+      #divlicenciacrear{
+        width: 100%;
+        margin-left: 4%;
+
+      }
+
+      #cambiodetamanio25{
+        width: 100%;
+        margin-left: 0%;
+      }
+
+      #cambiodetamanio26{
+        width: 100%;
+        margin-left: 4%;
+
+      }
+
+      #crearexamenbtn{
+        width: 100%;
+        margin-left: 6%;
+      }
+
+      .nombresdeexamenes{
+        font-size: 12px;
+      }
+
+      #div12responsive{
+        width: 100%;
+      }
+  }

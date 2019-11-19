@@ -1,0 +1,98 @@
+
+body {
+    background-color: #f1f1f1;
+}
+.descripcionpregunta{
+  font-size: 23px;
+
+}
+
+.respuestas{
+  font-size: 20px;
+
+}
+
+label{
+  color: #000000;
+ }
+
+ .paginacion{
+   font-size: 22px;
+
+ }
+
+ .flow-text{
+   font-size: 26px;
+ }
+
+ .nombre-usuario{
+   font-size: 22px;
+   padding-top: 4px;
+ }
+
+
+ .tituloexamen{
+   font-size: 32px;
+   text-align: center;
+   font-weight: bold;
+
+ }
+
+ .centrar{
+   text-align: center;
+
+ }
+
+ .my-drop-zone { border: dotted 3px lightgray; }
+.nv-file-over { border: dotted 3px red; } /* Default class applied to drop zones on over */
+.another-file-over-class { border: dotted 3px green; }
+
+
+@media screen and (max-width: 600px) {
+  .tituloexamen{
+ font-weight: bold;
+ font-size: 25px;
+
+  }
+
+  .descripcionpregunta{
+    font-size: 20px;
+
+  }
+
+  .respuestas{
+    font-size: 17px;
+  }
+
+  .paginacion{
+    font-size: 17px;
+
+  }
+
+  .botonguardar{
+    text-align: center;
+
+
+  }
+
+  #cronometro-numeros{
+    font-size: 15px;
+  }
+
+  #crono-icon{
+    font-size: 1rem;
+
+  }
+
+  .nombre-usuario{
+    font-size: 18px;
+  }
+
+  #cambiodetamanio2 {
+    width: 100%;
+  }
+
+
+
+
+}

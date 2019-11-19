@@ -1,0 +1,112 @@
+<div class="row"><br><br>
+  <div class="col s12">
+    <div class="col s11">
+      <i class="material-icons">filter_1</i>
+      <label class="atributoscuestionario">
+        Crear examen nuevo.
+      </label> <br> <br>
+    </div>
+    <form class="form" role="form" >
+      <div class="col s12">
+        <div class="col s4"  id="cambiodetamanio20">
+          <div>
+            <label for="nombre">Nombre del examen (*)</label>
+          </div>
+          <div>
+            <input placeholder="" id="nombre" name="nombre" type="text" class="form-control" [(ngModel)]="examen.nombre">
+          </div>
+        </div>
+        <div class="col s7" id="cambiodetamanio21">
+          <div>
+            <label for="descripcion">Descripcion</label>
+          </div>
+          <div>
+            <input class="materialize-textarea"  id="descripcion" name="descripcion" type="text" class="form-control" [(ngModel)]="examen.descripcion">
+          </div>
+        </div>
+      </div>
+      <div class="col s12">
+          <div class="col s4" id="cambiodetamanio22">
+            <div>
+              <label for="total_preguntas">Total Preguntas</label>
+            </div>
+            <div>
+              <input numbersOnly placeholder="" id="total_preguntas" name="total_preguntas" type="number" class="form-control" [(ngModel)]="examen.total_preguntas" (change)="mostrarconfpreguntas()">
+            </div>
+          </div>
+          <div class="col s4" id="cambiodetamanio23">
+            <div>
+              <label for="calificacion_minima">Calif. Minima</label>
+            </div>
+            <div>
+              <input numbersOnly placeholder="" id="calificacion_minima" name="calificacion_minima" type="number" class="form-control" [(ngModel)]="examen.calificacion_minima">
+            </div>
+          </div>
+          <div class="col s3" id="cambiodetamanio24">
+            <div>
+              <label for="tiempo_limite">Tiempo Limite</label>
+            </div>
+            <div>
+              <input numbersOnly placeholder="" id="tiempo_limite" name="tiempo_limite" type="number" class="form-control" [(ngModel)]="examen.tiempo_limite"  >
+            </div>
+          </div>
+      </div>
+
+
+       <div class="col 10  offset-s2" id="divlicenciacrear">
+         <br>
+         <br>
+          <div class="col s4  offset-s1" *ngFor="let licencia  of arraylicencias; let i = index">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" (click)="seleccionarlicenciasparaenviar(i)"/>
+                  <span>{{licencia.nombre}}</span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div *ngIf="examen.total_preguntas > 0" class="col s11"><br><br>
+        <div class="col s12" id="cambiodetamanio25">
+          <div class="col s11 offset-s1">
+            <i class="material-icons">filter_3</i> <label> Especificar categoria de preguntas.</label>
+            <br>
+          </div>
+        </div>
+        <br>
+        <div class="col s4 offset-s1" id="cambiodetamanio26">
+          <br>
+          <br>
+          <div>
+            <select class="browser-default">
+              <option (click)="seleccategoriaevent(i)" value="categoria.id" *ngFor="let categoria  of arraycategoriaslibres; let i = index">{{categoria.nombre}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col s11 offset-s1"  *ngFor="let licencia  of arraycategoriaslibresparamostrar; let i = index">
+          <br>
+          <div class="col s6" id="cambiodetamanio24">
+            <label for="nombre_categoria">{{licencia.nombre}}</label>
+          </div>
+          <div class="col s2" id="cambiodetamanio24">
+            <input id="tiempo_limite"i name="tiempo_limite"i placeholder="" type="number" value="licencia.cantidadpreguntas" (change)="mensajedeerror(licencia,$event)" class="form-control">
+          </div>
+          <div class="col s4" id="cambiodetamanio24">
+            <a class="waves-effect waves-light btn-small" (click)="agregaraarrayinput(licencia,i)"><i class="material-icons left">arrow_downward</i>Eliminar</a>
+          </div>
+        </div>
+      </div>
+       <div class="col s5 offset-s2" id="crearexamenbtn" >
+        <a class="waves-effect waves-light btn-small" id="botoncratetest" (click)="upvote()"><i class="material-icons left">arrow_downward</i>Crear examen</a>
+      </div>
+      <div class="col s3" id="cambiodetamanio9">
+                   <a  id="btncerrar" class="btn modal-close waves-effect waves-light">Salir</a>
+     </div>
+    </form>
+
+  </div>
+</div>

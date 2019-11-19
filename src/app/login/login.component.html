@@ -1,0 +1,58 @@
+<div class="br" id="br">
+<br class="br">
+<br class="br">
+<br class="br">
+<br class="br">
+</div>
+  <div class="row" id="subir">
+    <div class="col s6 " id="cambiodetamanio">
+      <div class="col s12 z-depth-6 card-panel" id="cambiotama1">
+        <div class="col s6 offset-s6" id="paddingdiv2">
+          <form class="login-form" >
+            <div class="row">
+              <div class="input-field col s12">
+                <div class="col s10"> <br>
+                  <img id="imagenlogo" src="./assets/CONSULTRETOPORTADA-01.svg" height="204px" alt="" >
+                  <br><br><br><br>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col s6" id="cambiodetamanio2">
+      <div class="col s12 z-depth-6 card-panel" id="cambiotama2">
+        <div class="col s9" id="paddingdiv">
+          <form class="login-form" novalidate (keyup.enter)="login()" (ngSubmit)="login()" autocomplete="off">
+            <div class="row"></div>
+            <div class="row">
+              <div class="col s10 offset-s1" id="cambiocorreo">
+                <div class=" col s12 input-field inline">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="email_inline" type="email" class="validate" autocomplete="off" name="email" [(ngModel)]="email" (ngModelChange)="verificarcorreo()" required>
+                  <label for="email_inline"  class="titulosform">Correo</label>
+                  <span class="helper-text" data-error="Error en el correo"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s10 offset-s1" id="cambiocontrasenia">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">lock_outline</i>
+                  <input id="password" type="password" [(ngModel)]="password" name="password" >
+                  <label for="password" class="titulosform">Contraseña</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6 offset-s9">
+                <a *ngIf=" !validemail || email == undefined || password == undefined || password.length == 0" class="btn-floating btn-large waves-effect waves-light disabled"><i class="material-icons">arrow_forward</i></a>
+                <a *ngIf=" validemail  && email != undefined && password != undefined && password.length > 0" class="btn-floating btn-large waves-effect waves-light" (click)="login()"><i class="material-icons">arrow_forward</i></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

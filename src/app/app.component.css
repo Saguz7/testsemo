@@ -1,0 +1,67 @@
+nav {
+    background-color: #FFFFFF;
+       height: 60px;
+}
+
+
+.linklogout{
+  font-size: 18px;
+  color: #000000;
+}
+
+.linklogin{
+  font-size: 18px;
+  color: #000000;
+}
+
+.dropdown-trigger{
+  font-size: 18px;
+  color: #000000;
+}
+
+.white-text {
+    color: #000 !important;
+}
+
+nav ul a {
+    color: #000;
+}
+#labeltitulo{
+  font-size: 20px;
+  color: #e91e63;
+}
+
+.nombreusuario{
+  font-size: 18px;
+  color: #000000;
+}
+
+#logosemovi{
+  width: 440px;
+   padding: 0 .0rem;
+   height: 80px;
+   margin-left: 10px;
+   margin-top: -10px;
+
+}
+
+
+
+@media screen and (max-width: 750px) {
+  nav {
+    height: 60px;
+  }
+
+  nav a {
+    color: #000;
+  }
+
+  .br {
+      background-color: #FFF;
+  }
+
+  #logosemovi{
+    width: 300px;
+    margin-left: 0%;
+  }
+}

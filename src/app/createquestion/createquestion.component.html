@@ -1,0 +1,104 @@
+<div class="row"><br><br>
+  <div class="col s11 offset-s1">
+    <div class="row">
+      <div class="col s11">
+        <i class="material-icons">filter_2</i>
+        <label class="atributoscuestionario">
+          Crear pregunta.
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s11">
+        <div>
+          <label for="descripcion">Descripcion de la pregunta </label>
+        </div>
+        <div>
+          <textarea id="textarea1" class="materialize-textarea" [(ngModel)]="pregunta.descripcion" ></textarea>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="col s11">
+        <br>
+        <br>
+        <div class="row">
+          <div>
+            <app-file-upload></app-file-upload>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <br>
+        <br>
+        <div class="col s11">
+          <div class="col s6">
+              <div class="col s12">
+                <label for="descripcion">Categoria </label>
+              </div>
+              <div class="col s12">
+                <select class="browser-default"> <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </div>
+          </div>
+          <div class="col s5 offset-s1">
+               <div class="col s6">
+                    <div>
+                      <label>
+                        Respuestas
+                      </label>
+                    </div>
+                    <div>
+                    <input type="number" numbersOnly [(ngModel)]="numeropreguntas" min="2">
+                    </div>
+              </div>
+              <br><br>
+
+               <div class=" col s4 btn" (click)="crearpreguntasfuncion()">
+                Crear Preguntas
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12">
+        <br><br>
+        <div  class="col s12" *ngFor="let respuesta  of preguntasacrear; let i = index" >
+          <div class="col s8  offset-s1">
+            <div>
+              <label for="descripcion">Respuesta {{i+1}}</label>
+            </div>
+            <div>
+              <div class="col s1">
+                <div class="valign-wrapper">
+                  <label>
+                    <input name="group2" type="radio" (click)="asignartrue(respuesta)"/>
+                    <span id="inputrdobtn">
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="col s8">
+                <input type="text" class="form-control"><br>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div>
+              <label>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col s10 offset-s1">
+          <br><br>
+          <a  *ngIf="pregunta.descripcion != undefined && postcreacionrespuestas" class="waves-effect waves-light btn-small" (click) = "enviar()" >Guardar Pregunta</a>
+          <a  *ngIf="pregunta.descripcion == undefined || !postcreacionrespuestas" class="waves-effect waves-light btn-small" (click) = "enviar()" disabled>Guardar Pregunta</a>
+
+        </div>
+      </div>
+      <br><br><br>
+    </div>
+  </div>
+</div>

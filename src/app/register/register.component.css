@@ -1,0 +1,113 @@
+body {
+    background-color: #f1f1f1;
+}
+#app {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+#video {
+    background-color: #000000;
+}
+#canvas {
+    display: none;
+}
+li {
+    display: inline;
+    padding: 5px;
+}
+
+
+label {
+  font-size: 24px;
+  color: #000000;
+
+  }
+
+  .categorias-enunciado {
+    font-size: 18px;
+    color: #000000;
+
+    }
+
+#botontomarfoto{
+  background-color:#ef5350;
+}
+
+.enunciadonormal{
+  color: #000000;
+
+
+}
+
+.center {
+  text-align: center;
+ }
+
+ .opcionesdeexamenes{
+   font-size: 18px;
+   color: #000000;
+
+ }
+
+ .advertencia{
+   font-size: 14px;
+   color: #e91e63;
+
+ }
+
+ .teal{
+   color: #fff !important;
+ }
+
+ .atributoscuestionario{
+font-weight: bold;
+font-size: 22px;
+
+ }
+
+ .helper-text{
+   font-size: 16px;
+
+ }
+
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #757575;
+  opacity: 1; /* Firefox */
+}
+
+.my-drop-zone { border: dotted 3px lightgray; }
+.nv-file-over { border: dotted 3px red; } /* Default class applied to drop zones on over */
+.another-file-over-class { border: dotted 3px green; }
+
+.btn-small{
+  background-color:#FFFFFF;
+ color: #e91e63;
+}
+
+.helper-text{
+  color: #e91e63;
+
+}
+
+@media screen and (min-width: 601px) {
+  #cambiodetamanio {
+   }
+}
+
+@media screen and (max-width: 600px) {
+  #cambiodetamanio {
+    width: 100%;
+  }
+  #cambiodetamanio2 {
+    width: 100%;
+  }
+
+  .atributoscuestionario{
+ font-weight: bold;
+ font-size: 18px;
+
+  }
+
+
+}

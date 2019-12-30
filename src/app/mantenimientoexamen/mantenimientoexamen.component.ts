@@ -157,7 +157,6 @@ export class MantenimientoexamenComponent implements OnInit {
   //Funcion para crear Preguntas
   crearpreguntasfuncion(){
     this.preguntasacrear = new Array();
-    console.log(this.numeropreguntas);
     for(var i= 0; i < this.numeropreguntas;i++){
       let respuestascreada = new RespuestaVO();
       respuestascreada.id = (i+1);
@@ -245,48 +244,17 @@ export class MantenimientoexamenComponent implements OnInit {
           this.arraylicenciasparaenviar.push(this.arraylicencias[i]);
       }
     }
-
-    /*
-     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    */
     this.n = this.examen.nombre;
     this.d = this.examen.descripcion;
     this.tP = this.examen.total_preguntas;
     this.cM = this.examen.calificacion_minima;
     this.tL =  this.examen.tiempo_limite;
-
-    console.log(this.arraylicenciasparaenviar);
-
-
-
-    /*
-    this.insertExamenGQL
-      .mutate({
-        n: this.examen.nombre,
-        d: this.examen.descripcion,
-        tP: this.examen.total_preguntas,
-        cM: this.examen.calificacion_minima,
-        tL: this.examen.tiempo_limite
-      })
-      .subscribe(({ data }) => {
-        M.toast({html: 'Se ha agregado un nuevo examen'})
-        window.location.href = "/mantenimientotest";
-      },(error) => {
-        var divisiones = error.message.split(":", 2);
-        M.toast({html: divisiones[1]})
-        });
-
-        */
   }
 
 
   seleccategoriaevent(id: number){
-    console.log("Elegir categoria"+id);
      this.arraycategoriaslibresparamostrar.push(this.arraycategoriaslibres[id]);
      this.arraycategoriaslibres.splice(id, 1);
-
-    console.log(this.arraycategoriaslibresparamostrar);
-    console.log(this.arraycategoriaslibres);
 
   }
 
@@ -297,12 +265,8 @@ export class MantenimientoexamenComponent implements OnInit {
   }
 
   mensajedeerror(licencia: any,event: any){
-     console.log("mensaje de error");
-     console.log(licencia);
-     console.log(event.target.value);
      licencia.cantidadpreguntas = event.target.value;
-     console.log(this.arraycategoriaslibresparamostrar);
-      this.cambiarmensadedeerror();
+     this.cambiarmensadedeerror();
 
    }
 

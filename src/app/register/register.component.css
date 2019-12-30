@@ -24,6 +24,37 @@ label {
 
   }
 
+
+  #divheader1{
+    font-size: 22px;
+     font-weight: bold;
+  }
+
+  #divheader2{
+    font-size: 22px;
+     font-weight: bold;
+
+  }
+
+  #divheader3{
+    font-size: 22px;
+     font-weight: bold;
+
+  }
+
+  #divheader4{
+    font-size: 22px;
+     font-weight: bold;
+
+  }
+
+  #divheader5{
+    font-size: 22px;
+     font-weight: bold;
+
+  }
+
+
   .categorias-enunciado {
     font-size: 18px;
     color: #000000;
@@ -63,7 +94,7 @@ label {
  .atributoscuestionario{
 font-weight: bold;
 font-size: 22px;
-
+color: #000 !important;
  }
 
  .helper-text{

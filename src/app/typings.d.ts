@@ -8,5 +8,6 @@ interface JQuery {
    closeModal():void;
    tooltip(options?: any, callback?: Function) : any
    pageMe(options?: any, callback?: Function) : any
+   collapsible():void;
 
 }

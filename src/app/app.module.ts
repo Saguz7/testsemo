@@ -26,6 +26,8 @@ import { CreateTetsComponent } from './createtets/createtets.component';
 import { CreateQuestionComponent } from './createquestion/createquestion.component';
 import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
+import { TestComponent } from './test/test.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +39,8 @@ import {TableModule} from 'primeng/table';
     MantenimientoexamenComponent,
     CreateTetsComponent,
     CreateQuestionComponent,
-    RegisterComponent
+    RegisterComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,9 @@ import {TableModule} from 'primeng/table';
     ButtonModule,
     TableModule
   ],
+  entryComponents: [
+  TestComponent
+],
   providers: [],
   bootstrap: [AppComponent]
 })

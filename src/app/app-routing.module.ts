@@ -15,7 +15,9 @@ const routes: Routes = [
   { path: 'upload', component: UploadComponent },
   { path: 'login', component: LoginComponent,  pathMatch: 'full' },
   { path: 'mantenimientotest', component: MantenimientoexamenComponent,  pathMatch: 'full' },
-  { path: 'examen', component: RegisterComponent,  pathMatch: 'full' }
+  { path: 'examen', component: RegisterComponent,  pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '**', redirectTo: '/login'}
 
 
 ];
